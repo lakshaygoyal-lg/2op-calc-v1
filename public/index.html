@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/middleware.svg">
+    <title>Two Operands Calc</title>
+</head>
+
+<body>
+    <header>
+        <h1>Two Operands Calc</h1>
+    </header>
+    <div id="container">
+        <h1>Calculator</h1>
+        <form id="calculator">
+
+            <label for="num1">
+                <h3>Number 1</h3>
+            </label>
+            <input type="number" name="num1" id="num1" required>
+            <label for="operator-select">
+                <h3>Select Operator</h3>
+            </label>
+            <select name="operator" id="operator-select">
+                <option value="+">+ (Addition)</option>
+                <option value="-">- (Subtraction)</option>
+                <option value="*">* (Multiplication)</option>
+                <option value="**">** (Exponent)</option>
+                <option value="/">/ (Division)</option>
+                <option value="//">// (Floor Division)</option>
+                <option value="%">% (Modulus)</option>
+                <option value="&">& (Bitwise AND)</option>
+                <option value="|">| (Bitwise OR)</option>
+                <option value="^">^ (Bitwise XOR)</option>
+            </select>
+
+            <label for="num2">
+                <h3>Number 2 </h3>
+            </label>
+            <input type="number" name="num2" id="num2" required>
+
+            <input type="submit" value="Calculate">
+        </form>
+        <h2 class="hidden result-h2">Result: <span id="result-1"></span> = <span id="result-2"></span></h2>
+    </div>
+    <footer>
+        <h2>&copy;<span id="cur-year"></span> <a href="https://lakshaygoyal-lg.github.io/capstone-v1/">Lakshay Goyal</a></h2>
+    </footer>
+    <script src="logic.js"></script>
+</body>
+
+</html>
